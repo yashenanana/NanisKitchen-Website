@@ -14,3 +14,6 @@ Implemented visually stimulating Web UI elements using a combination of HTML and
 <p></p>
 <img width="1914" height="892" alt="image" src="https://github.com/user-attachments/assets/a0bc350f-e11d-48c3-abf6-b1fd0a1f5dfd" />
 
+##Author
+Developed by Yashena Thiagaraja
+Design, images and recipes provided by Narina Kaur
