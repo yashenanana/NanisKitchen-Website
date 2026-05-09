@@ -1,0 +1,173 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .headerBody {
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #f05024;
+        }
+
+        .title {
+            font-family: nimbus;
+            font-size: 60px;
+        }
+
+        .subTitle {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: space-between;
+            font-size: large;
+        }
+
+        .subTitle a,
+        .subTitle a:visited {
+            color: #f05024;
+            font-family: poppins-bold;
+        }
+
+        a.active{
+            text-decoration: underline;
+            text-decoration-style: solid ;
+        }
+
+        .recipeBody {
+            flex: 1;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px;
+            row-gap: 75px;
+            overflow: hidden;
+            padding-bottom: 60px;
+
+        }
+
+        .recipeBody a {
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+        .recipeBody a img {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .recipeBody a .caption {
+            position: absolute;
+            bottom: -100%;
+            display: none;
+            justify-self: center;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            font-family: nimbus;
+            background: #f05024;
+            border-radius: 10px 10px 0px 0px;
+            color: #f8f1e9;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: bottom 0.3s ease-in-out;
+        }
+
+        .recipeBody a:hover .caption {
+            display: block;
+            bottom: 0;
+            opacity: 1;
+            transition-duration: 0.5s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButtonActive"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html" class="active">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="headerBody">
+            <span class="title"> NANI'S GRILL </span>
+            <div class="subTitle">
+                <a href="recipeAll.html" class="active">ALL</a>
+                <a href="recipeVeg.html">VEGETARIAN</a>
+                <a href="recipeChicken.html">CHICKEN</a>
+            </div>
+        </div>
+        <div class="recipeBody">
+            <span>
+                <a href="recipeChai.html">
+                    <img src="images/recipes-all/Chai.png" alt="Chai">
+                    <span class="caption">Chai</span>
+                </a>
+            </span>
+            <span>
+                <a href="recipeParatha.html">
+                    <img src="images/recipes-all/Paratha.png" alt="Paratha">
+                    <span class="caption">Paratha</span>
+                </a>
+            </span>
+            <span>
+                <a href="recipeAlooSamosa.html">
+                    <img src="images/recipes-all/Samosa.png" alt="Samosa">
+                    <span class="caption">Aloo Samosa</span>
+                </a>
+            </span>
+            <span>
+                <a href="recipeButterChicken.html">
+                    <img src="images/recipes-all/ButterChicken.png" alt="Butter Chicken">
+                    <span class="caption">Butter Chicken</span>
+                </a>
+            </span>
+            <span>
+                <a href="recipeChickenTikka.html">
+                    <img src="images/recipes-all/ChickenTikka.png" alt="Chicken Tikka">
+                    <span class="caption">Chicken Tikka</span>
+                </a>
+            </span>
+            <span>
+                <a href="recipeDal.html">
+                    <img src="images/recipes-all/Dal.png" alt="Dal">
+                    <span class="caption">Dal</span>
+                </a>
+            </span>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="footerHeader">
+            <a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+        </div>
+        <div class="footerBody">
+            <div class="keepInTouch">
+                <div class="subHeader">KEEP IN TOUCH</div>
+                <br> @naniskitchen
+                <br> on Instagaram and Facebook
+            </div>
+            <div class="contact">
+                <div class="subHeader">CONTACT US</div>
+                <br> naniskitchen@gmail.com
+            </div>
+        </div>
+    </div>
+</body>

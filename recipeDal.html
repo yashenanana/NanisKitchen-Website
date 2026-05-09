@@ -1,0 +1,222 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .mainBody {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipeHeader {
+            display: flex;
+            flex-direction: row;
+            height: 450px;
+            color: #f05024;
+            background-color: #f8f1e9;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .buttonSection {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttonSection a:visited,
+        .buttonSection a:link {
+            color: #f05024
+        }
+
+        .backButton {
+            font-family: poppins-bold;
+            font-size: larger;
+        }
+
+        .title {
+            padding-top: 30px;
+            flex: 1;
+            justify-content: flex-end;
+            align-content: flex-end;
+            font-family: nimbus;
+            font-size: 60px;
+        }
+
+        .imageSection {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            height: 100%;
+        }
+
+        .imageSection img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .recipeCollage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px 40px 25px;
+        }
+
+        .recipeCollage img {
+            width: 370px;
+        }
+
+        .recipeBody {
+            padding: 35px;
+            display: flex;
+            color: black;
+            font-family: poppins-reg;
+            font-size: larger;
+            background-color: #F9E4CB;
+        }
+
+        .wrapper {
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        .conditions {
+            display: flex;
+            flex-direction: column;
+            font-style: italic;
+            font-size: large;
+        }
+
+        .ingredients {
+            margin-top: 30px;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 10 0 0 0;
+            margin: 0;
+        }
+
+        .wrapperTitle {
+            font-family: poppins-bold;
+            font-size: 30px;
+        }
+
+        .instructions {
+            width: 50%;
+        }
+
+        .instructions ol {
+            margin: 0px;
+            padding: 0px 40px 0px 0px;
+        }
+
+        .instructions ol li {
+            margin: 20px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButtonActive"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="recipeHeader">
+            <div class="buttonSection">
+                <div class="backButton">
+                    <a href="recipeAll.html"> &lt; Back to all</a>
+                </div>
+                <div class="title">
+                    Dal Makhani
+                </div>
+            </div>
+            <div class="imageSection">
+                <img src="images/recipes-vege/Dal/MainDal.png" alt="samosa">
+            </div>
+        </div>
+        <div class="recipeCollage">
+            <img src="images/recipes-vege/Dal/Dal1.png">
+            <img src="images/recipes-vege/Dal/Dal2.png">
+            <img src="images/recipes-vege/Dal/Dal3.png">
+        </div>
+        <div class="recipeBody">
+            <div class="wrapper">
+                <div class="conditions">
+                    <span>TIME: 45 minutes </span>
+                    <span>SERVINGS: 5 </span>
+                    <span>SPECIAL EQUIPMENT: cooking pan</span>
+                </div>
+                <div class="ingredients">
+                    <span class="wrapperTitle">Ingredients</span>
+                    <ul>
+                        <li><input type="checkbox"> ½ cup whole urad dal</li>
+                        <li><input type="checkbox"> 3 ½ cups water</li>
+                        <li><input type="checkbox"> 6 cloves garlic</li>
+                        <li><input type="checkbox"> ½ tsp turmeric</li>
+                        <li><input type="checkbox"> 1 tsp masala powder</li>
+                        <li><input type="checkbox"> 1 cup onions</li>
+                        <li><input type="checkbox"> ½ tsp cumin seed</li>
+                        <li><input type="checkbox"> 1 jalapeno</li>
+                        <li><input type="checkbox"> 1 tomato</li>
+                        <li><input type="checkbox"> 3 tbsp cilantro</li>
+                        <li><input type="checkbox"> 1 tsp salt</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="instructions">
+                <span class="wrapperTitle">Instructions</span>
+                <ol>
+                    <li> Combine the lentils, water, whole garlic cloves, and turmeric.</li>
+                    <li> Bring to a simmer, reduce heat, and cover.</li>
+                    <li> Cook until the lentils have disintegrated, stirring occasionally to prevent sticking.</li>
+                    <li> Remove from heat and set aside.</li>
+                    <li> Heat a small skillet over medium-low heat and add the oil.</li>
+                    <li> When the oil starts to shimmer, add the onions and sweat them until soft and translucent.</li>
+                    <li> Toss in the diced jalapeno and cook for another minute.</li>
+                    <li> Add the cumin seeds.</li>
+                    <li> Toss in the tomato and cilantro and cook until the tomato is just warmed through.</li>
+                    <li> Fold the mixture into the dal and add the salt.</li>
+                    <li> Ready to serve as a main dish with an Indian flatbread.</li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerHeader">
+            <a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+        </div>
+        <div class="footerBody">
+            <div class="keepInTouch">
+                <div class="subHeader">KEEP IN TOUCH</div>
+                <br> @naniskitchen
+                <br> on Instagaram and Facebook
+            </div>
+            <div class="contact">
+                <div class="subHeader">CONTACT US</div>
+                <br> naniskitchen@gmail.com
+            </div>
+        </div>
+    </div>
+</body>

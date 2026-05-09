@@ -1,0 +1,199 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.mainBody{
+			display:flex;
+			flex-direction: column;
+    		flex:1;
+		}
+		.aboutHeader {
+			background-color: #f05024;
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			align-items: center;
+		}
+
+		.aboutHeader .title {
+			font-family: nimbus;
+			font-size: 60px;
+			padding-bottom: 10px;
+		}
+
+		.aboutHeader .aboutNaniImg {
+			flex: 1;
+			width: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.aboutNaniImg img {
+			height: 500px;
+		}
+
+		.aboutHeader .quote {
+			font-family: nimbus;
+			font-size: 38px;
+			padding: 40px 0px 20px 0px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.subcontentWrapper {
+			color: black;
+			padding: 50px 40px;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			height: auto;
+
+		}
+
+		.subcontent {
+			display: flex;
+			flex-direction: row;
+			padding-top: 0px;
+			padding-right: 50px;
+			padding-left: 25px;
+			padding-bottom: 0px;
+		}
+
+		.description {
+			width: 40%;
+			display: flex;
+			flex-direction: column;
+			margin-left: 50px;
+			text-align: justify;
+			color: rgb(32, 29, 29);
+			font-family: poppins-reg;
+			font-size: large;
+			padding-right: 20px;
+		}
+
+		.titleSub {
+			color: #f05024;
+			font-family: nimbus;
+			font-size: 60px;
+		}
+
+		.image1 {
+			margin-left: 40px;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.image2 {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+
+		}
+
+		.image2 img {
+			width: 450px;
+		}
+
+		.image1 img{
+			width: 550px;
+			height:auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="menu" id="myMenu">
+		<a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+		<div class="links">
+			<a href="heritage.html"> Heritage </a>
+			<a href="about.html" class="active"> About </a>
+			<div class="recipeDropdown">
+				<div class="dropdownButton"> Recipes </div>
+				<div class="recipe-content">
+					<a href="recipeAll.html">All</a>
+					<a href="recipeVeg.html">Vegetarian</a>
+					<a href="recipeChicken.html">Chicken</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainBody">
+		<div class="aboutHeader">
+			<span class="title"> MEET THE CHEF! </span>
+			<div class="aboutNaniImg">
+				<img src="images/about/Chef.png">
+			</div>
+			<span class="quote"> "The best attitude is gratitude." -Nani</span>
+		</div>
+		<div class="subcontentWrapper">
+			<div class="subcontent">
+				<div class="description">
+					<span class="titleSub"> HER ROOTS </span>
+					<p>My Nani, Pritam, affectionately known as Gudi (because she looked like a doll growing up!),
+						has a story that begins in Punjab. She was born there before moving to Malaysia as a baby
+						during the partition of Pakistan. As the eldest of seven siblings, she grew up in
+						the vibrant town of Malacca, nurturing her love for cooking amidst a bustling household.
+						After marrying my grandfather, she moved to Petaling Jaya, where she continues to reside.
+					</p>
+
+					<p>A dedicated English school teacher, Nani inspired countless students across secondary schools
+						in Malacca Town. Beyond the classroom, she has a passion for gardening, sewing, and
+						storytelling.
+						Her vibrant garden is a testament to her green thumb, while her beautifully crafted clothes
+						and
+						captivating tales reflect her creativity and warmth. Nani's big heart, selflessness, and
+						generosity
+						shine through in everything she does. Through her cooking, she keeps the rich traditions of
+						her Punjabi heritage alive, sharing her love and passion with every dish she prepares.</p>
+
+				</div>
+				<div class="image1">
+					<img src="images/about/HerRoots.png">
+				</div>
+			</div>
+			<div class="subcontent">
+				<div class="image2">
+					<img src="images/about/Family.png" alt="Family">
+				</div>
+				<div class="description">
+					<span class="titleSub">THE FAMILY</span>
+
+					<p>Nani's heart and home are the center of our family. She has three children, who have
+						blessed her with eight grandchildren. Nani played a crucial role in raising every one of us
+						from when we were babies, creating a close-knit family bound by love and shared traditions.
+					</p>
+
+					<p>Every now and then, she hosts dinners and lunches at her house, where we gather to indulge
+						in our favorite food—her exceptional cooking. These gatherings are filled with laughter,
+						love,
+						and the delicious aroma of her secret and treasured family recipes. We often joke about
+						opening a
+						restaurant dedicated to her culinary masterpieces, aptly named Nani's Kitchen. Her meals are
+						are a testament to her dedication, love, and the rich heritage she
+						cherishes and shares with all of us. </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footerHeader">
+			<a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+		</div>
+		<div class="footerBody">
+			<div class="keepInTouch">
+				<div class="subHeader">KEEP IN TOUCH</div>
+				<br> @naniskitchen
+				<br> on Instagaram and Facebook
+			</div>
+			<div class="contact">
+				<div class="subHeader">CONTACT US</div>
+				<br> naniskitchen@gmail.com
+			</div>
+		</div>
+	</div>
+</body>

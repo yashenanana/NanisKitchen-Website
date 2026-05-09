@@ -1,0 +1,239 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .mainBody {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipeHeader {
+            display: flex;
+            flex-direction: row;
+            height: 450px;
+            color: #f05024;
+            background-color: #f8f1e9;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .buttonSection {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttonSection a:visited,
+        .buttonSection a:link {
+            color: #f05024
+        }
+
+        .buttonSection a:hover{
+            scale: 1.05;
+            transition-duration: 0.1s;
+        }
+
+        .backButton {
+            font-family: poppins-bold;
+            font-size: larger;
+        }
+
+        .title {
+            padding-top: 30px;
+            flex: 1;
+            justify-content: flex-end;
+            align-content: flex-end;
+            font-family: nimbus;
+            font-size: 60px;
+        }
+
+        .imageSection {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            height: 100%;
+        }
+
+        .imageSection img {
+            width: 85%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .recipeCollage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px 40px 25px;
+        }
+
+        .recipeCollage img {
+            width: 370px;
+        }
+
+        .recipeBody {
+            padding: 35px;
+            display: flex;
+            color: black;
+            font-family: poppins-reg;
+            font-size: larger;
+            background-color: #F9E4CB;
+        }
+
+        .wrapper {
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        .conditions {
+            display: flex;
+            flex-direction: column;
+            font-style: italic;
+            font-size: large;
+        }
+
+        .ingredients {
+            margin-top: 30px;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 10 0 0 0;
+            margin: 0;
+        }
+
+        .wrapperTitle {
+            font-family: poppins-bold;
+            font-size: 30px;
+        }
+
+        .instructions {
+            width: 50%;
+        }
+
+        .instructions ol {
+            margin: 0px;
+            padding: 0px 40px 0px 0px;
+        }
+
+        .instructions ol li {
+            margin: 20px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButtonActive"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="recipeHeader">
+            <div class="buttonSection">
+                <div class="backButton">
+                    <a href="recipeAll.html"> &lt; Back to all</a>
+                </div>
+                <div class="title">
+                    Aloo Samosa
+                </div>
+            </div>
+            <div class="imageSection">
+                <img src="images/recipes-vege/Samosa.png" alt="samosa">
+            </div>
+        </div>
+        <div class="recipeCollage">
+            <img src="images/recipes-vege/Samosa2.png">
+            <img src="images/recipes-vege/Samosa3.png">
+            <img src="images/recipes-vege/Samosa4.png">
+        </div>
+        <div class="recipeBody">
+            <div class="wrapper">
+                <div class="conditions">
+                    <span>TIME: 45 minutes </span>
+                    <span>SERVINGS: 15 </span>
+                    <span>SPECIAL EQUIPMENT: cooking pan, deep fry pan</span>
+                </div>
+                <div class="ingredients">
+                    <span class="wrapperTitle">Ingredients</span>
+                    <ul>
+                        <li><input type="checkbox" id="oil"> <label for="oil">2 tbsp Oil</label></li>
+                        <li><input type="checkbox" id="onions"> <label for="onions">1 large Onion, chopped
+                                finely</label></li>
+                        <li><input type="checkbox" id="chilli-powder"> <label for="chilli-powder">1 tsp Chilli
+                                powder</label></li>
+                        <li><input type="checkbox" id="coriander-powder"> <label for="coriander-powder">1 tbsp Coriander
+                                powder</label></li>
+                        <li><input type="checkbox" id="masala-powder"> <label for="masala-powder">1 tsp Masala
+                                powder</label></li>
+                        <li><input type="checkbox" id="turmeric-powder"> <label for="turmeric-powder">1 tsp Turmeric
+                                powder</label></li>
+                        <li><input type="checkbox" id="carrot"> <label for="carrot">1 large Carrot, grated</label></li>
+                        <li><input type="checkbox" id="green-beans"> <label for="green-beans">6 Green Beans</label></li>
+                        <li><input type="checkbox" id="bell-pepper"> <label for="bell-pepper">½ Bell Pepper</label></li>
+                        <li><input type="checkbox" id="green-peas"> <label for="green-peas">¼ cup Green Peas,
+                                frozen</label></li>
+                        <li><input type="checkbox" id="ketchup"> <label for="ketchup">2 tbsp Tomato ketchup</label></li>
+                        <li><input type="checkbox" id="potatoes"> <label for="potatoes">2 medium Potatoes</label></li>
+                        <li><input type="checkbox" id="samosa-sheets"> <label for="samosa-sheets">20 Frozen Samosa
+                                Sheets</label></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="instructions">
+                <span class="wrapperTitle">Instructions</span>
+                <ol>
+                    <li>Heat oil in a cooking pan. Add in onions, ginger garlic paste, and sauté until golden brown.
+                    </li>
+                    <li>Add in the spice powders and mix well. Then, add in grated carrots and vegetables and cook them.
+                    </li>
+                    <li>Sprinkle in salt, tomato ketchup, and mix well. Add in boiled potatoes and combine. Finally, add
+                        in coriander leaves and mix.</li>
+                    <li>Mix flour with water to make a thick paste (this is used for folding the samosa). Set this aside
+                        until needed.</li>
+                    <li>Take a samosa sheet, spoon in the filling. Fold it like a samosa.</li>
+                    <li>Repeat this with the remaining samosas (you can store them in a container in the freezer until
+                        needed).</li>
+                    <li>Heat oil for deep frying. Drop the samosas in and fry on medium-high heat till golden brown and
+                        crispy.</li>
+                    <li>Strain using a slotted spoon and serve with ketchup.</li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerHeader">
+            <a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+        </div>
+        <div class="footerBody">
+            <div class="keepInTouch">
+                <div class="subHeader">KEEP IN TOUCH</div>
+                <br> @naniskitchen
+                <br> on Instagaram and Facebook
+            </div>
+            <div class="contact">
+                <div class="subHeader">CONTACT US</div>
+                <br> naniskitchen@gmail.com
+            </div>
+        </div>
+    </div>
+</body>

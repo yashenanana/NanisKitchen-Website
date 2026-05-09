@@ -1,0 +1,412 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .headerHome {
+            display: flex;
+            width: 100%;
+            height: 510px;
+            background-image: url("images/homepage/Header.png");
+            background-position: center;
+            background-size: 100%;
+            color: #f8f1e9;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner {
+            height: 40px;
+            background: #f05024;
+            color: #ffd4a3;
+            overflow: hidden;
+            user-select: none;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            font-family: nimbus;
+        }
+
+        .banner ul {
+            list-style: none;
+            flex-shrink: 0;
+            min-width: 100%;
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            animation: scroll 15s linear infinite;
+            gap: 15px;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .recipeBrowse {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 400px;
+            width: 100%;
+            color: black;
+            background-color: #f8f1e9;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .recipeBrowse .imageGallery {
+            width: 80%;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .recipeBrowse .imageGallery div {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .recipeBrowse .imageGallery div span {
+            flex: 0 0 33.33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            position: relative;
+        }
+
+        .recipeBrowse .imageGallery div img {
+            width: 60%;
+            height: auto;
+            display: block;
+        }
+
+        .recipeBrowse .imageGallery div .caption {
+            position: absolute;
+            bottom: -100%;
+            display: block;
+            justify-self: center;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            font-family: nimbus;
+            background: #f05024;
+            border-radius: 10px 10px 0px 0px;
+            color: #f8f1e9;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: bottom 0.3s ease-in-out;
+        }
+
+        .recipeBrowse .imageGallery div span:hover .caption {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .recipeBrowse .navButton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+        }
+
+        #backButton {
+            left: 10px;
+        }
+
+        #nextButton {
+            right: 10px;
+        }
+
+        .recipeBrowse .button1 {
+            background-color: #99031e;
+            padding: 10px;
+            border-radius: 16px;
+            justify-self: center;
+            font-family: poppins-bold;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .recipeBrowse .button1:hover {
+            scale: 1.05;
+            transition: 0.1s;
+        }
+
+        .naniStoryContainer {
+            display: flex;
+            height: 500px;
+            background-color: #99031e;
+        }
+
+        .naniStoryDesc {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 30px;
+            font-family: poppins-bold;
+            font-size: large;
+        }
+
+        .naniStoryHeader {
+            font-family: nimbus;
+            font-size: 35px;
+        }
+
+        .button2 {
+            background-color: #f8f1e9;
+            padding: 10px;
+            border-radius: 16px;
+            width: 155px;
+            justify-self: center;
+            font-family: poppins-bold;
+            font-style: italic;
+        }
+
+        .button2 a,
+        .button2 a:visited {
+            color: #99031e;
+        }
+
+        .button2:hover {
+            scale: 1.05;
+            transition: 0.1s;
+        }
+
+        .naniStoryPicture {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButton"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="headerHome"></div>
+
+        <div class="banner">
+            <ul>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+
+            </ul>
+            <ul aria-hidden="true">
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+                <li>
+                    North Indian Cuisine
+                </li>
+                <li>
+                    &#9734
+                </li>
+            </ul>
+        </div>
+
+        <div class="recipeBrowse">
+            <img src="images/homepage/previous.png" id="backButton" alt="Previous" class="navButton">
+            <div class="imageGallery">
+                <div>
+                    <span>
+                        <img src="images/recipes-all/Chai.png" alt="Chai">
+                        <span class="caption">Chai</span>
+                    </span>
+                    <span>
+                        <img src="images/recipes-all/Paratha.png" alt="Paratha">
+                        <span class="caption">Paratha</span>
+                    </span>
+                    <span>
+                        <img src="images/recipes-all/Samosa.png" alt="Samosa">
+                        <span class="caption">Aloo Samosa</span>
+                    </span>
+                    <span>
+                        <img src="images/recipes-all/ButterChicken.png" alt="Butter Chicken">
+                        <span class="caption">Butter Chicken</span>
+                    </span>
+                    <span>
+                        <img src="images/recipes-all/ChickenTikka.png" alt="Chicken Tikka">
+                        <span class="caption">Chicken Tikka</span>
+                    </span>
+                    <span>
+                        <img src="images/recipes-all/Dal.png" alt="Dal">
+                        <span class="caption">Dal</span>
+                    </span>
+                </div>
+            </div>
+            <img src="images/homepage/next.png" id="nextButton" alt="Next" class="navButton">
+            <div class="button1">
+                <a href="recipeAll.html"> EXPLORE RECIPES </a>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const backButton = document.getElementById('backButton');
+                const nextButton = document.getElementById('nextButton');
+                const imageGallery = document.querySelector('.imageGallery div');
+                let scrollAmount = 0;
+                const imageWidth = document.querySelector('.imageGallery div span').clientWidth;
+                const visibleImages = 3;
+                const totalImages = document.querySelectorAll('.imageGallery div span').length;
+
+                nextButton.addEventListener('click', function () {
+                    if (scrollAmount < (totalImages - visibleImages) * imageWidth) {
+                        scrollAmount += imageWidth;
+                        imageGallery.style.transform = `translateX(-${scrollAmount}px)`;
+                    } else {
+                        // Loop back to the start
+                        scrollAmount = 0;
+                        imageGallery.style.transform = `translateX(-${scrollAmount}px)`;
+                    }
+                });
+
+                backButton.addEventListener('click', function () {
+                    if (scrollAmount > 0) {
+                        scrollAmount -= imageWidth;
+                        imageGallery.style.transform = `translateX(-${scrollAmount}px)`;
+                    } else {
+                        // Loop back to the end
+                        scrollAmount = (totalImages - visibleImages) * imageWidth;
+                        imageGallery.style.transform = `translateX(-${scrollAmount}px)`;
+                    }
+                });
+            });
+        </script>
+
+        <div class="naniStoryContainer">
+            <div class="naniStoryDesc">
+                <div class="naniStoryHeader">
+                    Spicing things up, <br>
+                    One curry at a time.
+                </div>
+                <p>Meet Nani, my beloved grandmother.</p>
+
+                <p> From Punjab to Malaysia, she continues to share her culinary heritage,
+                    blending authentic Pubjabi dishes with local ingredients.</p>
+
+                <p> Each recipe is a testament to her love for cooking
+                    and her deep-rooted connection to family and culture. </p>
+                <br>
+                <div class="button2">
+                    <a href="about.html"> READ HER STORY </a>
+                </div>
+            </div>
+
+            <div class="naniStoryPicture">
+                <img src="images/homepage/Nani1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerHeader">
+            <a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+        </div>
+        <div class="footerBody">
+            <div class="keepInTouch">
+                <div class="subHeader">KEEP IN TOUCH</div>
+                <br> @naniskitchen
+                <br> on Instagaram and Facebook
+            </div>
+            <div class="contact">
+                <div class="subHeader">CONTACT US</div>
+                <br> naniskitchen@gmail.com
+            </div>
+        </div>
+    </div>
+</body>

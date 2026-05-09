@@ -1,0 +1,156 @@
+@font-face {
+    font-family: poppins-reg;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: nimbus;
+    src: url(fonts/TAN-NIMBUS.ttf);
+} 
+
+body {
+    background: #f8f1e9;
+    color: hsl(15, 46%, 95%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    font-family: poppins-reg;
+    height: auto;
+}
+
+.menu {
+    font-size: large;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 65px;
+    background: #f05024;
+    color: #f8f1e9;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    gap: 10px 20px;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    padding: 0px;
+}
+.navbar-logo img {
+    height: 50px;
+    padding:3px;
+    width: auto; 
+}
+
+.links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 60px;
+    gap: 100px;
+}
+
+.recipeDropdown{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.recipe-content{
+    display: none;
+    position: absolute;
+    background-color: #f05024;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdownButtonActive{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.recipe-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+}
+
+.recipe-content a:hover{
+    background-color: #f8f1e9;
+    color: #f05024;
+    border-radius: 5px;
+}
+
+.recipeDropdown:hover .recipe-content{
+    display:block;
+}
+
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links a.active {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+a:hover {
+    scale: 1.05;
+    transition-duration: 0.1s;
+}
+
+.mainBody{
+    flex:1;
+}
+
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px ;
+    height: 120px;
+    width: 100%;
+    color:#f05024;
+    background-color: #f8f1e9;
+    display: flex;
+}
+
+.footer-logo img {
+    margin-top: 10px;
+    height: 100px;
+    width: auto; 
+}
+
+.footer .footerHeader{
+    display: flex; 
+    width: 55%;
+    justify-self: flex-start;
+}
+
+.footer .footerBody{
+    width: 45%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.keepInTouch{
+    width: 270px;
+}
+
+.contact{
+    width: 270px;
+}
+.subHeader{
+    width: 50%;
+    font-family: poppins-bold;
+    font-size: large;
+    padding-bottom: 5px;
+}

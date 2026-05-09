@@ -1,0 +1,220 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .mainBody {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipeHeader {
+            display: flex;
+            flex-direction: row;
+            height: 450px;
+            color: #f05024;
+            background-color: #f8f1e9;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .buttonSection {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttonSection a:visited,
+        .buttonSection a:link {
+            color: #f05024
+        }
+
+        .backButton {
+            font-family: poppins-bold;
+            font-size: larger;
+        }
+
+        .title {
+            padding-top: 30px;
+            flex: 1;
+            justify-content: flex-end;
+            align-content: flex-end;
+            font-family: nimbus;
+            font-size: 60px;
+        }
+
+        .imageSection {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+            height: 100%;
+        }
+
+        .imageSection img {
+            width: 85%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .recipeCollage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px 40px 25px;
+        }
+
+        .recipeCollage img {
+            width: 370px;
+        }
+
+        .recipeBody {
+            padding: 35px;
+            display: flex;
+            color: black;
+            font-family: poppins-reg;
+            font-size: larger;
+            background-color: #F9E4CB;
+        }
+
+        .wrapper {
+            width: 50%; 
+            padding: 10px;
+        }
+
+        .conditions {
+            display: flex;
+            flex-direction: column;
+            font-style: italic;
+            font-size: large;
+        }
+
+        .ingredients {
+            margin-top: 30px;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 10 0 0 0;
+            margin: 0;
+        }
+
+        .wrapperTitle {
+            font-family: poppins-bold;
+            font-size: 30px;
+        }
+
+        .instructions {
+            width: 50%;
+        }
+
+        .instructions ol {
+            margin: 0px;
+            padding: 0px 40px 0px 0px;
+        }
+
+        .instructions ol li {
+            margin: 20px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButtonActive"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="recipeHeader">
+            <div class="buttonSection">
+                <div class="backButton">
+                    <a href="recipeAll.html"> &lt; Back to all</a>
+                </div>
+                <div class="title">
+                    Aloo Paratha
+                </div>
+            </div>
+            <div class="imageSection">
+                <img src="images/recipes-vege/AlooParatha/MainParatha.png" alt="samosa">
+            </div>
+        </div>
+        <div class="recipeCollage">
+            <img src="images/recipes-vege/AlooParatha/Paratha1.png">
+            <img src="images/recipes-vege/AlooParatha/Paratha2.png">
+            <img src="images/recipes-vege/AlooParatha/Paratha3.png">
+        </div>
+        <div class="recipeBody">
+            <div class="wrapper">
+                <div class="conditions">
+                    <span>TIME: 30 minutes </span>
+                    <span>SERVINGS: 10 </span>
+                    <span>SPECIAL EQUIPMENT: cooking pan, rolling pin</span>
+                </div>
+                <div class="ingredients">
+                    <span class="wrapperTitle">Ingredients</span>
+                    <ul>
+                        <li><input type="checkbox" id="flour"> <label for="flour">2.5 cups whole wheat flour</label></li>
+                        <li><input type="checkbox" id="salt1"> <label for="salt1">½ tsp salt</label></li>
+                        <li><input type="checkbox" id="cumin-seeds"> <label for="cumin-seeds">½ tsp cumin seeds</label></li>
+                        <li><input type="checkbox" id="water"> <label for="water">½ cups water</label></li>
+                        <li><input type="checkbox" id="ghee"> <label for="ghee">1 tbsp ghee</label></li>
+                        <li><input type="checkbox" id="potatoes"> <label for="potatoes">4 medium potatoes</label></li>
+                        <li><input type="checkbox" id="turmeric"> <label for="turmeric">½ tsp turmeric</label></li>
+                        <li><input type="checkbox" id="salt2"> <label for="salt2">½ tsp salt</label></li>
+                        <li><input type="checkbox" id="spices"> <label for="spices">1 tsp other spices of choice</label></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="instructions">
+                <span class="wrapperTitle">Instructions</span>
+                <ol>
+                    <li>To a bowl, add the flour, salt, and spices, and mix well.</li>
+                    <li>Heat one cup of water until almost boiling. Let it sit for 2 minutes to cool and then add it to the flour mixture.</li>
+                    <li>Add 2 teaspoons of ghee and another 1/4 cup of water. Press and mix.</li>
+                    <li>Use your oiled hands to bring the dough together. Add a couple more tablespoons of water if needed.</li>
+                    <li>Once the dough comes together, knead for a couple more seconds. Brush one teaspoon of oil on the dough, cover it with a napkin or a plate, and let it sit for 15 minutes.</li>
+                    <li>In the meantime, prepare the filling. Cook your potatoes if you haven’t already. Transfer the potatoes to a bowl to cool for a little bit, then peel and mash them.</li>
+                    <li>Add the turmeric, salt, and spices, and the optional onion, chili, and cilantro if using, and mix well. Mix and mash really well and set aside for a few minutes.</li>
+                    <li>Take about 2-3 tablespoons of the potato filling and place it in the middle of the flatbread.</li>
+                    <li>With a rolling pin, roll it gently. When rolling, keep the edges of the dough thinner and the center thicker.</li>
+                    <li>Once the square is about 6-7 inches, set it aside.</li>
+                    <li>Heat your pan over medium-high heat. Once the pan is hot, place the flatbread onto the pan and cook for 30 seconds or until golden brown. Flip to cook the other side and cook for another 30 seconds. Drizzle a few drops of ghee, flip it, press, and cook for about 1 minute or so.</li>
+                    <li>Repeat with the rest of the flatbreads until both sides are golden brown. Set aside on a plate or in a storage container.</li>
+                </ol>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerHeader">
+            <a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+        </div>
+        <div class="footerBody">
+            <div class="keepInTouch">
+                <div class="subHeader">KEEP IN TOUCH</div>
+                <br> @naniskitchen
+                <br> on Instagaram and Facebook
+            </div>
+            <div class="contact">
+                <div class="subHeader">CONTACT US</div>
+                <br> naniskitchen@gmail.com
+            </div>
+        </div>
+    </div>
+</body>

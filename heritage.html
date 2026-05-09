@@ -1,0 +1,136 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+        .mainBody{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            color: black;
+            font-size: larger;
+        }
+
+        .headerHeritage {
+            display: flex;
+            color: hsl(21.2, 100%, 43%);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .headerHeritage img{
+            height: 85%;
+            width: auto;
+           
+        }
+
+        .content1{
+            display: flex;
+            flex-direction: row;
+            background-color: #f05024;
+            padding: 40px;
+            align-items: center;
+        }
+
+        .textSection{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+        }
+
+        .imageSection{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 60%;
+        }
+
+        .imageSection img{
+            width: 70%;
+        }
+
+        .content2{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            gap: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menu" id="myMenu">
+        <a href="home.html" class="navbar-logo"> <img src="images/logo.png" id="logo" /></a>
+        <div class="links">
+            <a href="heritage.html" class="active"> Heritage </a>
+            <a href="about.html"> About </a>
+            <div class="recipeDropdown">
+                <div class="dropdownButton"> Recipes </div>
+                <div class="recipe-content">
+                    <a href="recipeAll.html">All</a>
+                    <a href="recipeVeg.html">Vegetarian</a>
+                    <a href="recipeChicken.html">Chicken</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="headerHeritage">
+            <img src="images/heritage/Heritage.png">
+        </div>
+        <div class="content1">
+            <div class="textSection">
+                <span class="text1"> North Indian cuisine is a rich blend of indigenous traditions
+                    and foreign influences that evolved over centuries. The region's fertile plains
+                    provided the basis for a diet rich in grains, vegetables, and dairy, while
+                    ancient Indian practices introduced the use of spices and herbs. The Mughal Empire
+                    brought significant Central Asian and Middle Eastern influences, introducing dishes
+                    like biryani and kebabs. Over time, the cuisine absorbed local flavors and techniques,
+                    such as using tandoors for baking and grilling. Today, North Indian food reflects a
+                    vibrant history, combining diverse elements into a deeply rooted culinary tradition. </span>
+                <br>
+
+                <span class="text2">North Indian meals often feature a variety of dishes on one plate,
+                    reflecting the region's emphasis on balance, diversity, and communal dining.
+                    Each component—ranging from breads and curries to pickles and sweets—offers a unique
+                    flavor, texture, and nutritional benefit, creating a harmonious and satisfying meal.
+                </span>
+            </div>
+            <div class="imageSection">
+                <img src="images/heritage/MultipleFood.jpg">
+            </div>
+        </div>
+        <div class="content2">
+            <span class="text3">
+                Maintaining the heritage of North Indian cooking is vital for young North Indians
+                living elsewhere, as it serves as a tangible link to their cultural roots and family
+                traditions. For teens, students, and young adults, incorporating these simple recipes
+                into daily life is an easy way to stay connected to their heritage, offering a sense
+                of identity and belonging even when far from home.
+            </span>
+            <span class="text4">
+                These dishes, often passed down through generations, are not just about food—they carry
+                stories, memories, and values that help preserve cultural continuity.
+            </span>
+        </div>
+    </div>
+
+    <div class="footer">
+		<div class="footerHeader">
+			<a href="home.html" class="footer-logo"> <img src="images/OrangeLogo.png" id="logoOrange" /></a>
+		</div>
+		<div class="footerBody">
+			<div class="keepInTouch">
+				<div class="subHeader">KEEP IN TOUCH</div>
+				<br> @naniskitchen
+				<br> on Instagaram and Facebook
+			</div>
+			<div class="contact">
+				<div class="subHeader">CONTACT US</div>
+				<br> naniskitchen@gmail.com
+			</div>
+		</div>
+	</div>
+</body>
