@@ -9,7 +9,8 @@ Implemented visually stimulating Web UI elements using a combination of HTML and
 - Interactive Animations
 - Dynamic Navigation Bar
 
-## Example
+## Preview
 <img width="1918" height="889" alt="image" src="https://github.com/user-attachments/assets/591996e0-c5a3-4273-b568-8bfaf961fc99" />
+
 <img width="1914" height="892" alt="image" src="https://github.com/user-attachments/assets/a0bc350f-e11d-48c3-abf6-b1fd0a1f5dfd" />
 
