@@ -16,4 +16,5 @@ Implemented visually stimulating Web UI elements using a combination of HTML and
 
 ## Author
 Developed by Yashena Thiagaraja
+<p>
 Design, images and recipes provided by Narina Kaur
