@@ -1,7 +1,7 @@
 # Nani's Kitchen Recipe Website
 A recipe website commisioned and designed by a friend with recipes inspired by her grandmother.
 
-Implemented visually stimulating Web UI elements using a combination of HTML and inline Javascript code.
+A combination of visually stimulating Web UI elements implemented using HTML and inline Javascript.
 
 ## Features
 - Infinity Banner
